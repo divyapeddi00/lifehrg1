@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+	<!-- <meta http-equiv="refresh" content="120";url=index.html">  -->
+<head>
+  <meta charset="UTF-8">
+  <title>Life-Health Reinforcement Group(Life-HRG)</title>
+  <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+  <style>
+.img1 {
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+}
+.img2 {
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+}
+</style>
+</head>
+
+<body>
+<div class="bodycolor">
+<nav class="nav">
+  <input id="menu" type="checkbox">
+  <label for="menu"> 
+        <img  class="img2" src="{% static 'images/main/lifehrg.png' %}" alt="Life_HRG"  ></label>
+  <ul class="menu">
+    <li>
+      <a href="{% url 'oh_home' %}">
+        <span>Andari Illu</span>
+         <img  class="img1" src="{% static 'images/main/openhouse.jpg' %}" alt="Andari Illu"  >
+      </a>
+    </li>
+    <li>
+      <a href="{% url 'an_home' %}">
+        <span>Ananda Nilayam</span>
+  <img  class="img2" src="{% static 'images/main/anandanilayam.png' %}" alt="Ananda Nilayam"  >
+      </a>
+    </li>
+    <li>
+      <a href="{% url 'sj_home' %}">
+        <span>Shubha Jayam</span>
+	
+  <img  class="img2" src="{% static 'images/main/shubhajayam.jpg' %}" alt="Shuba Jayam"  >
+  
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<p class="notification">Click on the Image</p>
+  </div>
+</body>
+</html>
